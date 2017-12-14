@@ -11,7 +11,15 @@ public class Rope {
 	
 	private int length; //current length of the rope
 	
-	 /**
+	/*outputs  the rope as a string instead of an object address*/
+	 @Override
+	public String toString() {
+		return "Rope [length=" + length + "]";
+	}
+
+
+
+	/**
 	   * A Rope constructor to set the length specified by the manufacturer.
 	   * @param length of the new coil of rope
 	   *
@@ -60,5 +68,5 @@ public class Rope {
 		
 		return false; 
 	}
-
+	
 }
